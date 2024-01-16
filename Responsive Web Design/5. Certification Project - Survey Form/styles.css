@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #54a0ff;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+#top {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: table;
+  color: #feca57;
+}
+
+#title {
+  color: white;
+}
+
+#form-outer {
+  width: 75%;
+  max-width: 600px;
+  background: #2e86d0;
+  margin: 10px auto;
+  margin-top: 30px;
+  padding: 20px;
+  border: 0 solid;
+  border-radius: 20px;
+}
+
+#survey-form {
+  display: grid;
+  width: 100%;
+  max-width: 600px;
+}
+
+#left-form {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #59ace0 , #2e86d0);
+  border:0px solid;
+  border-radius: 10px;
+}
+
+.labels {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.rightTab {
+  text-align: left;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 300;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}

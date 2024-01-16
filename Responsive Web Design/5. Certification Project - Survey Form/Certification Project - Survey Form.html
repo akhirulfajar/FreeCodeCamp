@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<htmL lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayni Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+<div id="top">
+<h1 id="title">Ayni Survey Form</h1>
+<p id="description">
+    Let us know how why you want to join us
+</p>
+</div>
+<div id="form-outer">
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+    <div id="left-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div id="up1">
+    <div class="rowTab" id="position0">
+      <div class="labels">
+        <label for="currentPos">Position you are applying for</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="student">Front-End Developer</option>
+      <option value="job">Back-End Developer</option>
+      <option value="learner">Python Programmer</option>
+      <option value="preferNo">Java Programmer</option>
+      <option value="other">C++ Programmer</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab" id="relocate0">
+      <div class="labels">
+        <label for="userRating">* Are you willing to relocate?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>No<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id="right-form">
+    <div class="rowTab" id="hearabout0">
+      <div class="labels">
+        <label for="most-like">Where did you hear about us?</label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Internet</option>
+      <option value="projects">Friends</option>
+      <option value="community">Local Ad</option>
+      <option value="openSource">Other sources</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab" id="subject0">
+      <div class="labels">
+        <label for="preferences">What subject you like the most?</label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Math</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Biology</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Chemistry</label></li>
+        </ul>
+      </div>
+    </div>
+          </div>
+    <div id="divider1"></div>
+    <div class="rowTab" id="comment0">
+      <div class="labels">
+        <label for="comments">Reference / Comments / Questions</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:80px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
